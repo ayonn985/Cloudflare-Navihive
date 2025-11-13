@@ -4,7 +4,7 @@
  */
 {
     "$schema": "node_modules/wrangler/config-schema.json",
-    "name": "navihive",
+    "name": "mynav",
     "main": "worker/index.ts",
     "compatibility_date": "2025-04-05",
     "assets": {
@@ -17,14 +17,15 @@
     "d1_databases": [
         {
             "binding": "DB",
-            "database_name": "navigation-db-local",
-            "database_id": "43ff28e1-42d6-4e53-9657-0702ae1353b6"
+            "database_name": "navigation-db",
+            "database_id": "c9a610b6-7d33-47c4-b15d-18bdde02d3d8"
         }
     ],
     "vars": {
         "AUTH_ENABLED": "true",
-        "AUTH_USERNAME": "linuxdo",
-        "AUTH_PASSWORD": "linuxdo",
-        "AUTH_SECRET": "linuxdo"
+        "AUTH_REQUIRED_FOR_READ": "false",
+        "AUTH_USERNAME": "admin",
+        "AUTH_PASSWORD": "$2y$10$m7vmj6lctfwbMtRE4NLNs.Jn.oTBHxGdSif1b2YXXIOEG3jT0bfcK",
+        "AUTH_SECRET": "OeNyw4VT5oK7XEihB0Oy3PyHChka4Dul"
     }
 }
